@@ -15,7 +15,7 @@ for i in phone_number:
         continue
     print(i, end="")
 
-for i in range(1,21):
+for i in range(1, 21):
     if i == 13:
         pass
     else:
