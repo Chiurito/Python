@@ -1,6 +1,5 @@
 from kivymd import *
 
-
 KV = """
 Screen:
     MDRectangleFlatButton:
@@ -13,11 +12,15 @@ class Builder:
     pass
 
 
+class MDApp:
+    pass
+
+
 class MainApp(MDApp):
 
     def build(self):
         self.title = "Hello Kivy"
-        self.theme_cls.theme_style = "Dark" # Light
+        self.theme_cls.theme_style = "Dark"  # Light
         self.theme_cls.primary_palette = "Red"
         return Builder.load_string(KV)
 
